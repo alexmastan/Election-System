@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="424.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.electionsystem.entryController">
+   <children>
+      <AnchorPane prefHeight="424.0" prefWidth="135.0" style="-fx-background-color: #1F3234;">
+         <children>
+            <Label layoutX="45.0" layoutY="67.0" text="Entry" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="gotomap" layoutX="48.0" layoutY="119.0" onMouseClicked="#switchToMap" onMouseEntered="#hoverLabel" onMouseExited="#hoverLabelRevert" text="Map" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label layoutX="44.0" layoutY="171.0" onMouseClicked="#switchToChart" onMouseEntered="#hoverLabel" onMouseExited="#hoverLabelRevert" text="Chart" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="221.0" onMouseClicked="#switchToLogs" onMouseEntered="#hoverLabel" onMouseExited="#hoverLabelRevert" text="Logs" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane prefHeight="424.0" prefWidth="545.0">
+         <children>
+            <Label layoutX="62.0" layoutY="117.0" text="CNP:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <AnchorPane prefHeight="67.0" prefWidth="545.0" style="-fx-background-color: #00CBEB;">
+               <children>
+                  <Label layoutX="45.0" layoutY="16.0" text="Enter Voter Credentials">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <TextField fx:id="cnp" layoutX="62.0" layoutY="143.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="308.0" layoutY="117.0" text="Seria:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="seria" layoutX="308.0" layoutY="143.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="61.0" layoutY="212.0" text="Nr:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nr" layoutX="61.0" layoutY="238.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="307.0" layoutY="212.0" text="Judet:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="judet" layoutX="307.0" layoutY="238.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <SVGPath content="M10 35 L130 35 L130 60 L10 60 Z" fill="#0098b0" layoutX="202.0" layoutY="324.0" onMouseClicked="#submitEntry" onMouseEntered="#hoverSVG" onMouseExited="#hoverSVGRevert" />
+            <Label layoutX="253.0" layoutY="363.0" onMouseClicked="#submitEntry" text="Submit" textFill="WHITE" mouseTransparent="true" />
+            <Label fx:id="validation" alignment="CENTER" layoutY="304.0" prefHeight="18.0" prefWidth="546.0" text=" " textFill="#0098af">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

@@ -1,0 +1,15 @@
+.text{
+    -fx-font-family: "Manrope Light";
+}
+
+.label{
+    -fx-alignment: center;
+}
+
+#adminlogin_background{
+
+}
+
+#mainwindow_title{
+    -fx-font-size: 60;
+}

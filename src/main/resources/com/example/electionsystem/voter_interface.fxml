@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="706.0" prefWidth="940.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.electionsystem.voterController">
+   <children>
+      <AnchorPane prefHeight="300.0" prefWidth="940.0">
+         <children>
+
+            <AnchorPane layoutX="687.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgray;">
+               <children>
+                  <CheckBox id="2" fx:id="votaur" layoutX="165.0" layoutY="165.0" mnemonicParsing="false" onAction="#pickBox">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <Label layoutX="2.0" layoutY="54.0" prefWidth="169.0" text="Alianta Pentru Unirea&#10;Romanilor ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="7.0" layoutY="118.0" text="George Nicolae-Simion">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="254.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgray;">
+               <children>
+                  <CheckBox id="1" fx:id="votusr" layoutX="165.0" layoutY="165.0" mnemonicParsing="false" onAction="#pickBox">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <Label layoutX="2.0" layoutY="55.0" text="Uniunea Salvati Romania">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="118.0" text="Elena Valerica-Lasconi">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="487.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: gold;">
+               <children>
+                  <ImageView fitHeight="194.0" fitWidth="200.0" layoutX="2.0" layoutY="3.0">
+                     <image>
+                        <Image url="@Logo_of_the_AUR_Alliance.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="54.0" layoutY="50.0">
+               <image>
+                  <Image url="@Logo_USR_2022_(2).svg.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="282.0" prefWidth="940.0">
+         <children>
+
+            <AnchorPane layoutX="254.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgray;">
+               <children>
+                  <CheckBox id="3" fx:id="votpsd" layoutX="165.0" layoutY="165.0" mnemonicParsing="false" onAction="#pickBox">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <Label layoutX="2.0" layoutY="55.0" text="Partidul Social Democrat">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="118.0" text="Ion-Marcel Ciolacu">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="687.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgray;">
+               <children>
+                  <CheckBox id="4" fx:id="votpnl" layoutX="165.0" layoutY="165.0" mnemonicParsing="false" onAction="#pickBox">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <Label layoutX="4.0" layoutY="56.0" text="Partidul National Liberal">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="118.0" text="Nicolae-Ionel Ciuca">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="487.0" layoutY="50.0">
+               <image>
+                  <Image url="@Partidul_Național_Liberal_(PNL)_logo.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="54.0" layoutY="50.0">
+               <image>
+                  <Image url="@Partidul_Social_Democrat_logo.svg.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="107.0" prefWidth="940.0">
+         <children>
+            <SVGPath content="M10 35 L300 35 L300 80 L10 80 Z" fill="#0098b0" layoutX="315.0" layoutY="15.0" onMousePressed="#submitVote" />
+            <Label layoutX="415.0" layoutY="53.0" onMousePressed="#submitVote" prefHeight="38.0" prefWidth="110.0" text="Submit Vote" textFill="WHITE">
+               <font>
+                  <Font name="Manrope Light" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="timeLabel" alignment="CENTER" layoutY="-4.0" prefHeight="35.0" prefWidth="940.0" text="      " textFill="#0098b0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

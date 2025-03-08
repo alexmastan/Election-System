@@ -1,0 +1,12 @@
+.text{
+    -fx-font-family: "Manrope";
+}
+
+.label{
+    -fx-alignment: center;
+}
+
+
+#title {
+    -fx-font-size: 18pt;
+}
